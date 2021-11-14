@@ -1,5 +1,9 @@
 const hre = require("hardhat");
 
+function tokens(n) {
+  return ethers.utils.parseEther(n);
+}
+
 async function main() {
   const owner = process.env.OWNER;
   const whitelister = process.env.WHITELISTER;
