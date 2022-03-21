@@ -22,28 +22,28 @@ module.exports = {
     }
   },
   networks: {
-    mainnet: {
+  // Binance Smart Chain
+    bsc: {
       url: 'https://bsc-dataseed.binance.org/',
       accounts: { mnemonic: process.env.MNEMONIC },
       chainId: 56
     },
-    testnet: {
+    bscTestnet: {
       url: 'https://data-seed-prebsc-1-s1.binance.org:8545',
       accounts: { mnemonic: process.env.MNEMONIC },
       chainId: 97
     }
   },
   etherscan: {
-    apiKey: process.env.BSCSCAN_KEY
+    apiKey: {
+      // Binance Smart Chain
+      bsc: process.env.BSCSCAN_KEY,
+      bscTestnet: process.env.BSCSCAN_KEY,
+    }
   },
   namedAccounts: {
     deployer: 0,
-    trader1: 1,
-    trader2: 2,
-    trader3: 3,
-    trader4: 4,
-    treasury: 5,
-    newOwner: 6
+    newOwner: 1
   }
 };
 
