@@ -38,7 +38,7 @@ module.exports = {
     apiKey: {
       // Binance Smart Chain
       bsc: process.env.BSCSCAN_KEY,
-      bscTestnet: process.env.BSCSCAN_KEY,
+      bscTestnet: process.env.BSCSCAN_KEY
     }
   },
   namedAccounts: {
