@@ -1,6 +1,6 @@
 # HAPPY BEP20 Token Contract
 
-The HAPPY BEP20 token contract running on the Binance Smart Chain.
+The HAPPY BEP20 Token contract deployed on the Binance Smart Chain.
 
 
 ## Binance Smart Chain

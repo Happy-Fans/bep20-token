@@ -1,5 +1,9 @@
 {
-  "name": "bep20-token",
+  "author": "B2B",
+  "license": "MIT",
+  "name": "HAPPY BEP20 Token",
+  "version": "1.0.0",
+  "description": "HAPPY ( Happy Fans ) BEP20 Token Contract",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
@@ -14,5 +18,14 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0"
+  },
+  "scripts": {
+    "deploy": "npx hardhat run --network {network_name} ../deploy.js",
+    "verify": "npx hardhat verify --network {network_name} {contract_address} {args}",
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Happy-Fans/bep20-token.git"
   }
 }
